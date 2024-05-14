@@ -1,0 +1,30 @@
+{
+  "name": "peertube-theme-medienhaus",
+  "version": "0.0.1",
+  "description": "PeerTube theme medienhaus/",
+  "engine": {
+    "peertube": ">=1.3.0"
+  },
+  "keywords": [
+    "peertube",
+    "theme"
+  ],
+  "homepage": "https://scm.medienhaus.udk-berlin.de/andirueckel/peertube-theme-medienhaus",
+  "author": "medienhaus/",
+  "bugs": "https://scm.medienhaus.udk-berlin.de/andirueckel/peertube-theme-medienhaus/-/issues",
+  "staticDirs": {
+    "fonts": "public/fonts"
+  },
+  "css": [
+    "assets/style.css",
+    "assets/fonts.css"
+  ],
+  "clientScripts": [
+    {
+      "script": "client/video-watch-client-plugin.js",
+      "scopes": [
+        "common"
+      ]
+    }
+  ]
+}

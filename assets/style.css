@@ -1,0 +1,987 @@
+/***
+
+Availbable Variables:
+
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6f42c1;
+--pink: #e83e8c;
+--red: #FF0000;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #39CC0B;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #6c757d;
+--gray-dark: #343a40;
+--primary: #007bff;
+--secondary: #6c757d;
+--success: #39CC0B;
+--info: #17a2b8;
+--warning: #ffc107;
+--danger: #FF0000;
+--light: #f8f9fa;
+--dark: #343a40;
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 900px;
+--breakpoint-xl: 1200px;
+--breakpoint-xxl: 1600px;
+--breakpoint-fhd: 1800px;
+--breakpoint-qhd: 2560px;
+--breakpoint-uhd: 3840px;
+--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+--mainColor: #f2690d;
+--mainColorLighter: #f5873d;
+--mainColorLightest: #fce1cf;
+--mainHoverColor: #f47825;
+--mainBackgroundColor: #fff;
+--mainForegroundColor: #000;
+--secondaryColor: #148a99;
+--greyForegroundColor: #585858;
+--greyBackgroundColor: #E5E5E5;
+--menuBackgroundColor: #000;
+--menuForegroundColor: #fff;
+--submenuBackgroundColor: #F7F7F7;
+--channelBackgroundColor: #f6ede8;
+--inputForegroundColor: #000;
+--inputBackgroundColor: #fff;
+--inputPlaceholderColor: #898989;
+--textareaForegroundColor: #000;
+--textareaBackgroundColor: #fff;
+--markdownTextareaBackgroundColor: #EFEFEF;
+--actionButtonColor: #585858;
+--supportButtonBackgroundColor: transparent;
+--supportButtonColor: var(--actionButtonColor);
+--supportButtonHeartColor: #e83e8c;
+--activatedActionButtonColor: #000;
+--horizontalMarginContent: 30px;
+--videosHorizontalMarginContent: 6vw;
+--mainColWidth: calc(100vw - 240px);
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6f42c1;
+--pink: #e83e8c;
+--red: #FF0000;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #39CC0B;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #6c757d;
+--gray-dark: #343a40;
+--primary: #007bff;
+--secondary: #6c757d;
+--success: #39CC0B;
+--info: #17a2b8;
+--warning: #ffc107;
+--danger: #FF0000;
+--light: #f8f9fa;
+--dark: #343a40;
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 900px;
+--breakpoint-xl: 1200px;
+--breakpoint-xxl: 1600px;
+--breakpoint-fhd: 1800px;
+--breakpoint-qhd: 2560px;
+--breakpoint-uhd: 3840px;
+--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+--mainColor: #f2690d;
+--mainColorLighter: #f5873d;
+--mainColorLightest: #fce1cf;
+--mainHoverColor: #f47825;
+--mainBackgroundColor: #fff;
+--mainForegroundColor: #000;
+--secondaryColor: #148a99;
+--greyForegroundColor: #585858;
+--greyBackgroundColor: #E5E5E5;
+--menuBackgroundColor: #000;
+--menuForegroundColor: #fff;
+--submenuBackgroundColor: #F7F7F7;
+--channelBackgroundColor: #f6ede8;
+--inputForegroundColor: #000;
+--inputBackgroundColor: #fff;
+--inputPlaceholderColor: #898989;
+--textareaForegroundColor: #000;
+--textareaBackgroundColor: #fff;
+--markdownTextareaBackgroundColor: #EFEFEF;
+--actionButtonColor: #585858;
+--supportButtonBackgroundColor: transparent;
+--supportButtonColor: var(--actionButtonColor);
+--supportButtonHeartColor: #e83e8c;
+--activatedActionButtonColor: #000;
+--horizontalMarginContent: 30px;
+--videosHorizontalMarginContent: 6vw;
+--mainColWidth: calc(100vw - 240px);
+--horizontalMarginContent: 150px;
+--mainColWidth: 100vw;
+--grey-color: #b3b3b3;
+--red-color: #e4093b;
+--fontSize1: 35px;
+--fontSize2: 16px;
+--fontSize3: 12px;
+--mainColor: rgb(0,0,0);
+--mainColorLighter: rgba(0,0,0,0.8);
+--mainColorLightest: rgba(0,0,0,0.6);
+--secondaryColor: rgb(0,0,0);
+--submenuColor: rgb(255,255,255);
+--supportButtonHeartColor: rgb(228,9,59);
+--mainHoverColor: #e4093b;
+--video-miniature-width: 500px;
+--miniature-min-width: 280px;
+--miniature-max-width: 360px;
+--menuBackgroundColor: rgb(255,255,255);
+--menuForegroundColor: rgb(0,0,0);
+--gridVideosMiniatureMargins: var(--videosHorizontalMarginContent);
+--rowThumbnailWidth: 280px;
+--rowThumbnailHeight: 153px;
+
+***/
+
+:root{
+  --gray: hsl(0deg 0% 46%);
+  --grey-color: #b3b3b3;
+  --red-color: #e4093b;
+  --fontSize1: 35px;
+  --fontSize2: 16px;
+  --fontSize3: 12px;
+}
+
+body {
+  --mainColor: rgb(0,0,0);
+  --mainColorLighter: rgba(0,0,0,0.8);
+  --mainColorLightest: rgba(0,0,0,0.6);
+  --mainHoverColor: rgb(0,0,0);
+  --secondaryColor: rgb(0,0,0);
+  --submenuColor: rgb(255,255,255);
+  --supportButtonHeartColor: rgb(228,9,59);
+  --mainHoverColor: var(--red-color);
+  --video-miniature-width: 500px;
+  font-family: "Inter", "VideoJS", "Apple Color Emoji", "Twemoji", sans-serif !important;
+
+  --channelBackgroundColor: hsl(0deg 0% 94%);
+}
+
+
+/***************
+ * Main Styles *
+ ***************/
+
+body#custom-css{
+  font-weight: 500;
+  font-size: var(--fontSize2);
+}
+
+body#custom-css .header{
+  box-shadow: none;
+  height: 60px;
+}
+/*
+body#custom-css a,
+body#custom-css a:hover{
+  color: inherit;
+  text-decoration: underline;
+}
+*/
+body#custom-css .top-left-block,
+body#custom-css .header-right{
+  height: 60px;
+}
+
+body#custom-css .sub-header-container{
+  margin-top: 60px;
+}
+
+body#custom-css .loader div,
+body#custom-css .vjs-loading-spinner,
+body#custom-css .vjs-big-play-button{
+  border-radius: 200px;
+}
+
+body#custom-css #typeahead-container input{
+  border: unset!important;
+}
+body#custom-css #typeahead-container input#search-video{
+  border: unset;
+  border-radius: unset;
+  box-shadow: none;
+  border-bottom: 3px solid var(--mainColor)!important;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 0px;
+  padding-left: 0px;
+}
+body#custom-css #typeahead-container input#search-video::placeholder{
+  color: var(--grey-color);
+  font-size: var(--fontSize2);
+  font-weight: 500;
+}
+
+body#custom-css .header-right .icon-search svg{
+  width: 24px;
+  height: 29px;
+}
+
+body#custom-css .publish-button my-global-icon{
+  margin-right: 7px;
+}
+
+body#custom-css .title-page-about,
+body#custom-css .title-page-settings,
+body#custom-css .button-link,
+body#custom-css .logged-in-block > div:first-child .logged-in-more .logged-in-info .logged-in-display-name{
+  font-size: var(--fontSize2);
+  font-weight: 700;
+}
+
+body#custom-css label,
+body#custom-css .root .form-group-checkbox input + span + span,
+body#custom-css .miniature .miniature-info .miniature-name{
+  font-size: var(--fontSize2);
+  font-weight: 500;
+}
+
+body#custom-css .root small,
+body#custom-css .badge,
+body#custom-css .miniature .miniature-info .privacy-date,
+body#custom-css .miniature .miniature-info .privacy-date .video-info-privacy,
+body#custom-css .logged-in-block > div:first-child .logged-in-more .logged-in-info .logged-in-username{
+  font-size: var(--fontSize3);
+  font-weight: 500;
+}
+
+body#custom-css .root small a,
+body#custom-css .root small a:hover,
+body#custom-css .content a{
+  color: inherit;
+  text-decoration: underline;
+}
+
+body#custom-css .title-page-autoplay span{
+  font-size: var(--fontSize3);
+  font-weight: 700;
+}
+
+body#custom-css .badge-secondary{
+  background: black;
+  vertical-align: middle;
+}
+
+body#custom-css .row h1 .badge{
+  margin-left: 15px;
+  border-radius: 0;
+}
+
+body#custom-css .publish-button{
+  height: 38px;
+  line-height: 38px;
+  transition: background .3s;
+}
+
+body#custom-css .title-page.title-page-single,
+body#custom-css .section .section-title,
+body#custom-css .row h1{
+  font-size: var(--fontSize1);
+  font-weight: 500;
+}
+body#custom-css .section .section-title{
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body#custom-css .icon.icon-logo{
+  display: none;
+}
+
+body#custom-css .section.channel .section-title a img{
+  transform: translateY(-9px);
+}
+
+body#custom-css .logged-in-block > div:first-child .logged-in-more.show,
+body#custom-css .notification-inbox-link a.active,
+body#custom-css .notification-inbox-popover.shown,
+body#custom-css .btn-group-subscribe.subscribe-button .btn.focus-visible,
+body#custom-css .btn-group-subscribe.subscribe-button .btn:focus{
+  box-shadow: none;
+}
+
+body#custom-css .logged-in-block > div:first-child .logged-in-more.show .logged-in-display-name{
+  color: var(--red-color);
+}
+
+body#custom-css .footer-copyleft {
+  display: none;
+}
+
+body#custom-css td,
+body#custom-css th {
+  font-family: inherit;
+}
+
+body#custom-css .first-step-block .button-file.focus-visible,
+body#custom-css .first-step-block .button-file:focus,
+body#custom-css .publish-button:focus{
+  box-shadow: none;
+}
+
+body#custom-css .btn-group-subscribe,
+body#custom-css .publish-button,
+body#custom-css .btn,
+body#custom-css .btn-sm,
+body#custom-css .popover,
+body#custom-css .dropdown-menu,
+body#custom-css .modal-content,
+body#custom-css .first-step-block .button-file,
+body#custom-css .create-button,
+body#custom-css .top-buttons .delete-history,
+body#custom-css .grey-button,
+body#custom-css .button-link,
+body#custom-css .playlist-buttons .share-button,
+body#custom-css input[type=submit],
+body#custom-css .miniature .miniature-thumbnail,
+body#custom-css .user-quota .progress,
+body#custom-css .section.channel .section-title a img,
+body#custom-css .root .form-group-checkbox input + span,
+body#custom-css input + label,
+body#custom-css .comment-buttons button,
+body#custom-css .header .peertube-select-container,
+body#custom-css .header a,
+body#custom-css .wrapper a img,
+body#custom-css .logged-in-block > div:first-child .logged-in-more img,
+body#custom-css .actor img,
+body#custom-css .actor .actor-img-edit-container .actor-img-edit-button,
+body#custom-css .avatar-and-textarea img,
+body#custom-css .root-comment .comment-avatar,
+body#custom-css .root-comment .comment .comment-account-date .video-author{
+  border-radius: 0;
+}
+
+body#custom-css .account-title.account-title-danger{
+  color: var(--red-color);
+}
+body#custom-css .delete-me button{
+  border-radius: 0;
+  background-color: var(--red-color);;
+}
+
+
+/***************
+ * Video Tiles *
+ ***************/
+
+body#custom-css .margin-content .videos{
+  --miniature-min-width: 280px;
+  --miniature-max-width: 360px;
+  column-gap: 18px;
+}
+
+body#custom-css .videos .video-wrapper .video-miniature{
+  padding-bottom: 40px;
+}
+
+body#custom-css .video-miniature-information .views{
+  display: none;
+}
+
+body#custom-css .video-miniature .video-bottom .video-miniature-information .video-miniature-name{
+  font-size: var(--fontSize2);
+  line-height: 1.4;
+  font-weight: 500;
+  padding-bottom: 3px;
+  max-height: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: calc(100% - 20px);
+}
+.video-miniature .video-bottom .video-actions .dropdown-root{
+  text-align: right;
+}
+.video-miniature .video-bottom .video-actions .dropdown-root button{
+  padding: 0;
+}
+body#custom-css .video-thumbnail{
+  border-radius: 0;
+}
+
+body#custom-css .video-thumbnail img{
+  /*
+  filter: grayscale(100%) contrast(130%);
+  */
+  transition: filter .4s;
+}
+/*
+body#custom-css .video-miniature:hover .video-thumbnail img{
+  filter: grayscale(0%) contrast(100%);
+}
+*/
+
+body#custom-css .video-miniature-information .video-miniature-created-at-views{
+  margin-top: -4px;
+}
+body#custom-css .video-miniature-information .video-miniature-created-at-views,
+body#custom-css .video-miniature-information .video-miniature-account{
+  color: var(--grey-color);
+  font-size: 12px;
+  transition: color .3s;
+  font-weight: 500;
+}
+body#custom-css .video-miniature-information .video-miniature-account:hover{
+  /*color: var(--red-color);*/
+  color: black;
+}
+body#custom-css .video-miniature-information .video-miniature-account::before{
+  content: "/";
+  font-weight: 600;
+  margin-right: -2px;
+}
+
+body#custom-css .video-thumbnail .video-thumbnail-duration-overlay{
+  background-color: rgba(0,0,0,.9);
+  border-radius: 2px;
+  font-weight: 300;
+  font-size: var(--fontSize3);
+  padding: 2px 5px;
+}
+body#custom-css .video-thumbnail .video-thumbnail-watch-later-overlay{
+  background-color: rgba(0,0,0,.9);
+  border-radius: 2px;
+}
+body#custom-css .video-thumbnail .video-thumbnail-watch-later-overlay svg{
+  width: 15px;
+  height: 15px;
+}
+
+/** Video beim Hovern nicht einschwärzen **/
+body#custom-css .video-thumbnail .play-overlay{
+  background-color: rgba(0,0,0,0);
+}
+
+body#custom-css .video-playlists .no-videos img{
+  display: none;
+}
+
+
+/***************
+ * Chanel View *
+ ***************/
+
+body#custom-css .section.channel{
+  padding-bottom: 30px;
+}
+body#custom-css .sub-menu .actor .actor-info .actor-names .actor-display-name,
+body#custom-css .sub-menu .links a{
+  font-size: var(--fontSize2);
+  font-weight: 500;
+}
+body#custom-css .sub-menu .links a{
+  font-weight: 700;
+  text-transform: none;
+}
+body#custom-css .sub-menu .actor .actor-info .actor-followers,
+body#custom-css .sub-menu .actor .actor-info .actor-names .actor-name,
+body#custom-css .sub-menu .actor .actor-info .actor-owner,
+body#custom-css .section .show-more{
+  font-size: var(--fontSize3);
+}
+body#custom-css .sub-menu .actor .actor-info .actor-owner img{
+  display: none;
+}
+
+body#custom-css .section.channel div.section-title{
+  padding-top: 40px;
+}
+body#custom-css .section.channel:first-child div.section-title{
+  padding-top: 0;
+}
+
+body#custom-css .channels .video-thumbnail,
+body#custom-css .video-miniature .video-bottom .video-miniature-information{
+  width: 100%;
+}
+body#custom-css .channels .video-miniature{
+  width: calc(100% - 10px);
+}
+body#custom-css .channels .video-miniature .video-bottom .video-actions{
+  width: unset;
+}
+body#custom-css .channels .video-miniature .action-button{
+  position: absolute;
+  left: -20px;
+}
+body#custom-css .video-miniature .video-bottom .video-miniature-information .video-miniature-meta{
+  width: calc(100% - 0px)
+}
+body#custom-css .channels .video-thumbnail .play-overlay{
+  top: 0;
+}
+body#custom-css .channels .video-miniature{
+  padding-bottom: 40px;
+}
+body#custom-css .channels .video-thumbnail{
+  height: auto;
+}
+body#custom-css .main-col.expanded .sub-menu{
+  padding: 0;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+body#custom-css .date-title{
+  font-size: var(--fontSize3);
+  font-weight: 700;
+}
+
+
+/***********
+* Sidebar *
+***********/
+
+body#custom-css .on-instance a.active,
+body#custom-css .in-my-library a.active{
+  /**color: var(--red-color);**/
+  font-weight: 700;
+}
+
+body#custom-css menu.is-logged-in .block-title{
+  color: var(--grey-color);
+  font-size: var(--fontSize3);
+  font-weight: 700;
+}
+
+body#custom-css .menu-wrapper .logged-in-menu{
+  border-top: unset;
+  margin-bottom: 35px;
+}
+
+body#custom-css .logged-in-block .logged-in-menu a.active{
+  border-left: 0;
+  font-weight: 700;
+  /*color: var(--red-color);*/
+}
+
+/** Alle Icons in der Sidebar ausblenden **/
+body#custom-css .menu-wrapper .in-my-library my-global-icon,
+body#custom-css .menu-wrapper .on-instance my-global-icon,
+body#custom-css .menu-wrapper .footer-block my-global-icon,
+body#custom-css .menu-wrapper .logged-in-menu my-global-icon{
+  display: none;
+}
+body#custom-css .menu-wrapper .in-my-library a::before,
+body#custom-css .menu-wrapper .on-instance a::before,
+body#custom-css .menu-wrapper .footer-block a::before,
+body#custom-css .menu-wrapper .logged-in-menu a::before{
+  content: "/";
+  font-weight: 500;
+  margin-right: 2px;
+}
+body#custom-css .logged-in-block a,
+body#custom-css .on-instance a,
+body#custom-css.logged-in-menu a,
+body#custom-css .in-my-library a{
+  font-size: var(--fontSize2);
+  font-weight: 500;
+}
+
+body#custom-css .menu-wrapper .on-instance{
+  margin-top: 40px;
+}
+
+body#custom-css .notification-inbox-popover .unread-notifications{
+  background-color: var(--red-color);
+  border-radius: 20px;
+}
+
+body#custom-css .popover-notifications a{
+  color: black;
+}
+body#custom-css .popover-notifications.popover .popover-body .notifications-header{
+  color: black;
+}
+body#custom-css .popover,
+body#custom-css .popover a,
+body#custom-css .popover .notification{
+  font-weight: 500;
+  line-height: 1.4;
+  font-size: var(--fontSize2);
+}
+
+body#custom-css .popover .notification .from-date{
+  font-size: var(--fontSize3);
+  color: var(--grey-color);
+}
+
+body#custom-css .popover-notifications.popover .popover-body,
+body#custom-css .help-popover .popover-body{
+  font-family: "Inter";
+}
+
+body#custom-css .notifications a{
+  color: black;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/** SIDEBAR BLACK **/
+/*
+body{
+  --menuBackgroundColor: rgb(0,0,0);
+  --menuForegroundColor: rgb(255,255,255);
+}
+body#custom-css .logged-in-block{
+  background-color: black;
+}
+
+body#custom-css #video-wrapper{
+  border-left: 3px solid #2e2e2e;
+}
+*/
+
+/** SIDEBAR WHITE **/
+body{
+  --menuBackgroundColor: rgb(255,255,255);
+  --menuForegroundColor: rgb(0,0,0);
+}
+body#custom-css .logged-in-block{
+  background-color: white;
+}
+body#custom-css .menu-wrapper{
+  border-right: 1px solid #dadada;
+}
+body#custom-css .header{
+  border-bottom: 1px solid #dadada;
+}
+body#custom-css .footer-block a.active,
+body#custom-css .in-my-library a.active,
+body#custom-css .on-instance a.active{
+  background-color: #f9f9f9;
+}
+body#custom-css .notification-inbox-popover:hover .feather,
+body#custom-css .notification-inbox-popover.shown .feather{
+  color: black;
+}
+
+body#custom-css #video-wrapper{
+  border-left: 0px solid #2e2e2e;
+}
+
+
+/*********
+* Video *
+*********/
+
+body#custom-css .video-info .video-info-name{
+  font-size: var(--fontSize1);
+  font-weight: 500;
+}
+
+body#custom-css .video-info .video-info-date-views{
+  align-self: center;
+  color: var(--grey-color);
+}
+
+body#custom-css .other-videos .avatar{
+  display: none;
+}
+
+body#custom-css .footer-links div a:nth-of-type(1),
+body#custom-css .footer-links div a:nth-of-type(2),
+body#custom-css .footer-links div a:nth-of-type(3),
+body#custom-css .footer-links div a:nth-of-type(4),
+body#custom-css .footer-links div a:nth-of-type(5),
+body#custom-css .footer,
+body#custom-css .dropdown-toggle.btn.btn-sm.dropdown-toggle-split
+{
+  display: none;
+}
+
+body#custom-css .video-info-channel-left{
+  margin-top: 18px;
+}
+
+body#custom-css .video-info-channel-left .video-info-channel-left-links a{
+  font-size: var(--fontSize2);
+  font-weight: 500;
+  /*
+  text-decoration: underline;
+  */
+}
+
+body#custom-css .video-info-channel-left .video-info-channel-left-links a:hover{
+  color: black;
+  transition: all .3s;
+  opacity: 1;
+  /*
+  text-decoration: underline;
+  */
+}
+
+body#custom-css .video-bottom .video-info .video-info-first-row .video-info-channel a span{
+  color: var(--grey-color);
+  font-weight: 500;
+  font-size: var(--fontSize3);
+  transition: color .3s;
+}
+body#custom-css .video-bottom .video-info .video-info-first-row .video-info-channel a span:before{
+  content: "/";
+  font-weight: 600;
+  margin-right: 1px;
+}
+
+body#custom-css .video-attributes{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+body#custom-css .video-bottom .video-info .video-attributes .video-attribute{
+  margin-bottom: 3px;
+}
+
+body#custom-css .video-bottom .video-info .video-attributes .video-attribute .video-attribute-label,
+body#custom-css .video-bottom .video-info .video-attributes .video-attribute{
+  color: black;
+  font-weight: 500;
+  font-size: var(--fontSize3);
+}
+
+body#custom-css .video-bottom .video-info .video-attributes .video-attribute a,
+body#custom-css .video-info-description a{
+  text-decoration: underline;
+  color: inherit;
+}
+
+body#custom-css .btn-group-subscribe{
+  margin-top: 18px;
+}
+
+body#custom-css .border-top{
+  border-top: 3px solid black!important;
+}
+
+body#custom-css .video-bottom .video-info{
+  padding-right: 15px;
+}
+
+body#custom-css .title-page-autoplay{
+  margin-left: 0;
+  margin-bottom: 15px;
+  margin-top: 26px;
+}
+
+body#custom-css .video-bottom .video-info .video-info-first-row .video-actions-rates .video-info-likes-dislikes-bar-inner-container,
+body#custom-css my-global-icon[iconname="channel"]{
+  display: none;
+}
+
+body#custom-css .other-videos .title-page.title-page-single{
+  font-size: var(--fontSize2);
+  font-weight: 700;
+}
+
+body#custom-css .video-bottom .video-info .video-info-first-row .video-info-date-views,
+body#custom-css .video-bottom .video-info .video-info-description{
+  font-size: var(--fontSize2);
+  font-weight: 500;
+}
+
+body#custom-css .btn-group-subscribe > .btn{
+  padding-right: 9px;
+}
+
+/** HIDE INFOS / ICONS IN THE VIDEO PLAYER **/
+body#custom-css .video-js.vjs-peertube-skin .vjs-control-bar .vjs-peertube .icon.icon-download,
+body#custom-css .video-js.vjs-peertube-skin .vjs-control-bar .vjs-peertube .download-speed-text,
+body#custom-css .video-js.vjs-peertube-skin .vjs-control-bar .vjs-peertube .icon.icon-upload,
+body#custom-css .video-js.vjs-peertube-skin .vjs-control-bar .vjs-peertube .upload-speed-text,
+body#custom-css .video-js.vjs-peertube-skin .vjs-control-bar .vjs-peertube .peers-number,
+body#custom-css .video-js.vjs-peertube-skin .vjs-control-bar .vjs-peertube .peers-text{
+  display: none;
+}
+
+/** COLOR ADJUSTMENTS **/
+body#custom-css .video-bottom .video-info .video-info-first-row .video-actions-rates .video-actions .action-button,
+body#custom-css .video-bottom .video-info .video-info-first-row .video-actions-rates .video-actions .action-button .feather,
+body#custom-css .video-bottom .video-info .video-info-first-row .video-actions-rates .video-actions .action-button .material{
+  color: black;
+  font-weight: 500;
+  font-size: var(--fontSize3);
+  text-transform: lowercase;
+}
+
+body#custom-css .video-bottom .video-info .video-info-first-row .video-actions-rates .video-actions .action-button.activated .feather{
+  color: var(--red-color);
+}
+
+
+body#custom-css .video-bottom .video-info .video-info-first-row .video-info-channel a span:hover{
+  color: black;
+  transition: all .3;
+}
+
+body#custom-css .video-bottom .video-info .video-info-first-row .video-actions-rates .video-actions .action-button svg circle[fill="#000"],
+body#custom-css .video-bottom .video-info .video-info-first-row .video-actions-rates .video-actions .action-button svg g[fill="#000"],
+body#custom-css .video-bottom .video-info .video-info-first-row .video-actions-rates .video-actions .action-button svg path[fill="#000"],
+body#custom-css .video-bottom .video-info .video-info-first-row .video-actions-rates .video-actions .action-button svg polygon[fill="#000"],
+body#custom-css .video-bottom .video-info .video-info-first-row .video-actions-rates .video-actions .action-button svg rect[fill="#000"]{
+  fill: black;
+}
+
+body#custom-css #dropdown-sort-comments{
+  color: black;
+  opacity: .6;
+  text-transform: lowercase;
+}
+body#custom-css #dropdown-sort-comments:first-letter{
+  text-transform: uppercase;
+}
+body#custom-css #dropdown-sort-comments:hover,
+body#custom-css #dropdown-sort-comments.btn-outline-secondary.dropdown-toggle{
+  background-color: transparent;
+  opacity: 1;
+  font-size: var(--fontSize2);
+  font-weight: 500;
+}
+
+body#custom-css .dropdown-menu,
+body#custom-css .popover{
+  border: 1px solid black;
+}
+
+/***********
+* Settings *
+************/
+
+body#custom-css my-account-settings .actor{
+  margin-bottom: 40px;
+}
+
+body#custom-css .actor .actor-img-edit-container .actor-img-edit-button{
+  top: 60px;
+}
+
+body#custom-css .header .peertube-select-container.peertube-select-button{
+  height: 30px;
+}
+
+/***************
+* Experimental *
+****************/
+
+body#custom-css .video-bottom .other-videos a.video-thumbnail{
+  display: none;
+}
+
+body#custom-css .video-js.vjs-peertube-skin .vjs-control-bar .vjs-next-video{
+  display: none;
+}
+
+body#custom-css .main-col .sub-menu.sub-menu-fixed a[routerlink="peertube"],
+body#custom-css .video-channel-buttons my-global-icon[iconname="edit"],
+body#custom-css .video-channel-buttons my-global-icon[iconname="delete"],
+body#custom-css my-global-icon[iconname="videos"],
+body#custom-css my-global-icon[iconname="cloud-download"],
+body#custom-css my-global-icon[iconname="users"],
+body#custom-css my-global-icon[iconname="playlists"],
+body#custom-css my-global-icon[iconname="subscriptions"],
+body#custom-css my-global-icon[iconname="history"],
+body#custom-css my-global-icon[iconname="share"]{
+  display: none;
+}
+
+
+@media screen and (min-width: 1800px){
+  body#custom-css .margin-content{
+    margin-left: 30px!important;
+    margin-right: 30px!important;
+  }
+}
+
+@media screen and (max-width: 560px){
+  :root{
+    --fontSize1: 25px;
+    --fontSize2: 14px;
+    --fontSize3: 11px;
+  }
+
+  body#custom-css .video-miniature .video-bottom .video-miniature-information .avatar{
+    display: none;
+  }
+
+  body#custom-css .video-channel img{
+    border-radius: 0;
+  }
+
+  body#custom-css .video-miniature .video-bottom,
+  body#custom-css .video-miniature .video-bottom .video-miniature-information{
+    max-width: 100%!important;
+  }
+
+  body#custom-css div.feed{
+    display: none;
+  }
+
+  body#custom-css .videos-header{
+    flex-direction: row;
+    margin-left: 3%;
+  }
+  body#custom-css .videos-header .moderation-block div my-global-icon{
+    margin-right: 19px;
+    top: 8px;
+  }
+  body#custom-css .sub-menu .links a{
+    font-size: 100%;
+  }
+  body#custom-css .main-col.expanded .margin-content{
+    margin: 2%;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  body#custom-css .video-wrapper{
+    max-width: 100vw;
+    position: relative;
+    box-sizing: border-box;
+  }
+}
+
+
+body#custom-css .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+  background-color: var(--channelBackgroundColor);
+}
+body#custom-css .ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup.ng-option-selected, .ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup.ng-option-selected.ng-option-marked {
+  background-color: var(--channelBackgroundColor);
+}
+body#custom-css .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected, .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected.ng-option-marked {
+  background-color: var(--channelBackgroundColor);
+}
+
+body#custom-css .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon:hover {
+  background-color: var(--grey-color);
+}
+body#custom-css .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon.left {
+  border-right: 1px solid var(--grey-color);
+}
+
+body#custom-css .dropdown-item:hover, .dropdown-item:focus {
+  background-color: hsl(0deg 0% 93%);
+}
+
+body#custom-css a.view-account:hover {
+  /* background-color: var(--channelBackgroundColor); */
+  background-color: var(--white);
+}
+
+body#custom-css .avatar.account,
+body#custom-css .avatar.channel {
+  border-radius: 0;
+}
+
+body#custom-css my-input-switch input[type="checkbox"] + label:after {
+  border-radius: 0;
+}
